@@ -1,0 +1,11 @@
+<h4>Book was succesfully created.</h4>
+
+<%= form_for(@book) do |f| %>
+	<h4>Title : <%= f.text_field :title %></h4>
+
+	<h4>Body : <%= f.text_area :body %></h4>
+
+	<%= link_to "edit", books_path %>
+	<%= link_to "back", books_path %>
+
+<% end %>
