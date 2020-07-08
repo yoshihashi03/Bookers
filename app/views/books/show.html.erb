@@ -1,9 +1,10 @@
-<%= link_to "Bookers", books_path %>
+<p id="notice">
+	<%= notice %>
+</p>
 
 <h4>Title : <%= @book.title %></h4>
 <h4>Body : <%= @book.body %></h4>
 
-<%= form_for(@book) do |f| %>
-	<%= link_to "edit", books_path %>
-	<%= link_to "back", books_path %>
-<% end %>
+
+	<p><%= link_to "edit", edit_book_path(@book) %>
+	<%= link_to "back", books_path %></p>
